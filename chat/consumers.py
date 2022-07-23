@@ -161,9 +161,9 @@ class VideoChatConsumer(AsyncConsumer):
                 await self.send({
                     'type': 'websocket.send', 
                     'text': json.dumps({
-                    'type': 'offerResult', 
-                    'status': status, 
-                    'video_thread_id': video_thread_id
+                        'type': 'offerResult', 
+                        'status': status, 
+                        'video_thread_id': video_thread_id
                     })
                 })
                 
